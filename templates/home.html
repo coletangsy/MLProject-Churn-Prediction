@@ -1,0 +1,91 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+   <body>
+      <title>Churn Prediction</title>
+
+	<br>
+	<br>
+
+	  <div class="container">
+		<div class="row">
+
+		  <form action="http://localhost:5000/" method="POST">
+		  	<div class="col-sm-9">
+
+			<div class="form-group  purple-border">
+				<label for="comment"><b>Please enter the following information of the customer, in order to predict he/she is likely to churn or not.</b></label>
+				<br>
+			</div>		
+			<br>		
+			 <div class="form-group  purple-border">
+				  <label for="comment"><b>CONTRACT PERIOD</b> <br>If Contract period = <b>Month-to-month</b>, enter 1, else 0:</label>
+				  <textarea class="form-control" rows="2" id="query1" name="query1" rows="2" cols="5" autofocus>{{query1}}</textarea>
+			</div>
+			<br>	
+			<div class="form-group  purple-border">
+				<label for="comment"><b>CONTRACT PERIOD (validation)</b> <br>If Contract period = <b>Two Years</b>, enter 1, else 0: </label>
+				<textarea class="form-control" rows="2" id="query6" name="query6" rows="2" cols="5" autofocus>{{query6}}</textarea>
+		      </div>
+			<br>	
+			<div class="form-group  purple-border">
+				  <label for="comment"><b>TOTAL CHARGES:</b><br>Please enter numeric numbers</label>
+				  <textarea class="form-control" rows="2" id="query2" name="query2" rows="2" cols="5" autofocus>{{query2}}</textarea>
+			</div>
+			<br>	
+			<div class="form-group  purple-border">
+				<label for="comment"><b>MONTHLY CHARGES:</b><br>Please enter numeric numbers</label>
+				<textarea class="form-control" rows="2" id="query8" name="query8" rows="2" cols="5" autofocus>{{query8}}</textarea>
+		    	</div>
+			<br>	
+			<div class="form-group  purple-border">
+				<label for="comment"><b>PAYMENT METHOD</b><br>If using <b>Electionic Check</b> to pay, enter 1, else 0:</label>
+				<textarea class="form-control" rows="2" id="query7" name="query7" rows="2" cols="5" autofocus>{{query7}}</textarea>
+			</div>
+			<br>
+			<div class="form-group  purple-border">
+				<label for="comment"><b>TENURE</b><br>If the remaining tenure <b>between 1 -12 month</b>, enter 1, else 0:</label>
+				<textarea class="form-control" rows="2" id="query10" name="query10" rows="2" cols="5" autofocus>{{query10}}</textarea>
+		   	</div>
+			<br>
+			<div class="form-group  purple-border">
+				  <label for="comment"><b>INTERNET - Online Security</b><br>If the customer <b>DO NOT use Online Security</b> services, enter 1, else 0:</label>
+				  <textarea class="form-control" rows="2" id="query3" name="query3" rows="2" cols="5" autofocus>{{query3}}</textarea>
+			</div>
+			<br>
+			<div class="form-group  purple-border">
+				  <label for="comment"><b>INTERNET - Tech Support</b><br>If the customer <b>DO NOT use Tech Support services</b>, enter 1, else 0:</label>
+				  <textarea class="form-control" rows="2" id="query4" name="query4" rows="2" cols="5" autofocus>{{query4}}</textarea>
+			</div>
+			<br>
+			<div class="form-group  purple-border">
+				  <label for="comment"><b>INTERNET - Online Backup</b><br>If the customer <b>DO NOT use Online Backup services</b>, enter 1, else 0:</label>
+				  <textarea class="form-control" rows="2" id="query5" name="query5" rows="2" cols="5" autofocus>{{query5}}</textarea>
+			</div>
+			<br>
+			<div class="form-group  purple-border">
+				  <label for="comment"><b>INTERNET - Device Protection</b><br>If the customer <b>DO NOT use Device Protection services</b>, enter 1, else 0:</label>
+				  <textarea class="form-control" rows="2" id="query9" name="query9" rows="2" cols="5" autofocus>{{query9}}</textarea>
+			</div>
+			<br>
+			</div>
+			<div class="col-sm-3">
+			<button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
+			</div>
+		  </form>
+		  </div>
+		  <br>
+		  <br>
+		<div class="row"> 
+			<div class="col-sm-9">
+			<textarea class="form-control" rows="2" id="comment" name="query6" rows="2" cols="5" autofocus>{{output1}}</textarea>
+			<textarea class="form-control" rows="2" id="comment" name="query7" rows="2" cols="5" autofocus>{{output2}}</textarea>
+			</div>
+		</div>
+	</div>		
+   </body>
+</html>
