@@ -8,6 +8,11 @@ This repository holding a case study on analysis churn in Telecom and building a
 The dataset used in this project is from IBM Sample Data Sets, which hosted on [Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn). For more information, please refers to the Kaggle dataset description.
 <br><br>
 
+### Demo
+[video on application]
+<br><br>
+
+
 ### Content
 |       | Document                           | Progress | Version | Links    |
 | :---  | :---                               | :---     |:---     |   :---   |
