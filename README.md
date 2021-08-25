@@ -22,6 +22,7 @@ The dataset used in this project is from IBM Sample Data Sets, which hosted on [
 |   4   | Model Deployment with ***FLASK***        | DONE|     1    |    **Local Deploy:**<br>1. [html format](https://github.com/coletangsy/MLProject-Churn-Prediction/tree/main/templates) <br>2. [Main python files](https://github.com/coletangsy/MLProject-Churn-Prediction/blob/main/app.py) <br>3. [Built Model](https://github.com/coletangsy/MLProject-Churn-Prediction/blob/main/telecom_churn_best_model.sav)|
 |   5   | Model Deployment with ***FLASK***  on ***Google Cloud***| ON-GOING      |      | |
 |   6   | Presentation Notes                | DONE      | 1       | [ML - Churn.pdf](https://github.com/coletangsy/MLProject-Churn-Prediction/blob/main/ML%20-%20Churn.pdf)|
+|   7   | Power BI Dashboard                | ON-GOING      | 1       |  |
 
 <br>
 
