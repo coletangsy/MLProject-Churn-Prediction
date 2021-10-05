@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import train_test_split
-from imblearn.combine import SMOTEENN
-from sklearn.ensemble import RandomForestClassifier
-from sklearn import metrics
+# from sklearn.preprocessing import MinMaxScaler
+# from sklearn.model_selection import train_test_split
+# from imblearn.combine import SMOTEENN
+# from sklearn.ensemble import RandomForestClassifier
+# from sklearn import metrics
 
 
 from flask import Flask, request, render_template
