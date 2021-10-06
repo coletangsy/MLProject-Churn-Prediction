@@ -63,10 +63,10 @@ def predict():
 
       if single ==1:
             o1 = "This customer is likely to CHURN!!"
-            o2 = f"Confidence level equals to {(proba*100):.2f}%"
+            o2 = f"Probability {(proba*100):.2f}%"
       else:
             o1 = "This customer is likely to CONTINUE!!"
-            o2 = f"Confidence level equals to {(proba2*100):.2f}%"
+            o2 = f"Probability equals to {(proba2*100):.2f}%"
 
       return render_template('home.html', output1=o1, output2=o2, 
                            query1 = request.form['query1'], 
